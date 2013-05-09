@@ -3,8 +3,9 @@
  
 #include <SDL/SDL.h>
 #include "CSurface.h"
+#include "CEvent.h"
  
-class CApp {
+class CApp : public CEvent {
     private:
         bool            Running;
         SDL_Surface*    Surf_Display;
@@ -17,6 +18,8 @@ class CApp {
      public:
         bool OnInit();
         void OnEvent(SDL_Event* Event);
+        void OnExit();
+
         void OnLoop();
         void OnRender();
         void OnCleanup();
