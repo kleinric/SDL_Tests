@@ -1,7 +1,9 @@
 #include "CApp.h"
+#include "CSurface.h"
  
 CApp::CApp() {
     Surf_Display = NULL;
+    Surf_Test    = NULL;
     Running = true;
 }
 
@@ -12,6 +14,11 @@ bool CApp::OnInit(){
     
     Surf_Display = SDL_SetVideoMode(640, 480, 32, SDL_HWSURFACE | SDL_DOUBLEBUF);
     if(Surf_Display == NULL){
+        return false;
+    }
+
+    Surf_Test = CSurface::OnLoad("bin/myimage.bmp");
+    if(Surf_Test == NULL){
         return false;
     }
 

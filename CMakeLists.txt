@@ -1,6 +1,6 @@
 CMAKE_MINIMUM_REQUIRED (VERSION 2.6.2)
 PROJECT (SDL_TUTORIAL)
-
+SET ( CMAKE_BUILD_TYPE "debug" )
 #
 # Project Output Paths
 #

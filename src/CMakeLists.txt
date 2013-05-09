@@ -1,9 +1,5 @@
-set ( SOURCES
-    CApp.cpp
-    CApp_OnEvent.cpp
-    CApp_OnRender.cpp
-    CApp_OnCleanup.cpp
-    CApp_OnLoop.cpp
-)
-    add_executable ( main ${SOURCES} )
+FILE ( GLOB SOURCES "*.cpp" )
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-write-strings")
+add_executable ( main ${SOURCES} )
 

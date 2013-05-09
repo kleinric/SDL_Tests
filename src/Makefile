@@ -235,6 +235,30 @@ CApp_OnRender.cpp.s:
 	cd /home/ric/Desktop/sdl && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/CApp_OnRender.cpp.s
 .PHONY : CApp_OnRender.cpp.s
 
+CSurface.o: CSurface.cpp.o
+.PHONY : CSurface.o
+
+# target to build an object file
+CSurface.cpp.o:
+	cd /home/ric/Desktop/sdl && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/CSurface.cpp.o
+.PHONY : CSurface.cpp.o
+
+CSurface.i: CSurface.cpp.i
+.PHONY : CSurface.i
+
+# target to preprocess a source file
+CSurface.cpp.i:
+	cd /home/ric/Desktop/sdl && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/CSurface.cpp.i
+.PHONY : CSurface.cpp.i
+
+CSurface.s: CSurface.cpp.s
+.PHONY : CSurface.s
+
+# target to generate assembly for a file
+CSurface.cpp.s:
+	cd /home/ric/Desktop/sdl && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/CSurface.cpp.s
+.PHONY : CSurface.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -259,6 +283,9 @@ help:
 	@echo "... CApp_OnRender.o"
 	@echo "... CApp_OnRender.i"
 	@echo "... CApp_OnRender.s"
+	@echo "... CSurface.o"
+	@echo "... CSurface.i"
+	@echo "... CSurface.s"
 .PHONY : help
 
 
